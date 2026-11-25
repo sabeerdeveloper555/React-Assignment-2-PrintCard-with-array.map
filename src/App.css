@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Main Container */
+.app{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Page Title */
+.page-title{
+  text-align: center;
+  background-color: #cfe0ff;
+  color: #173b83;
+  font-size: 42px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Student List */
+.student-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* Student Card */
+.student-card{
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Student Name */
+.student-card h3{
+  font-size: 26px;
+  background-color: #e3edff;
+  color: #111827;
+  padding: 20px;
+}
+
+/* Student Details */
+.student-card p{
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* Labels */
+.student-label{
+  font-weight: bold;
+  color: #475569;
+}
+
+/* Table Responsive */
+@media (max-width: 768px) {
+  .app{
+    padding: 20px;
+  }
+
+  .page-title{
+    font-size: 32px;
+    padding: 25px 15px;
+    margin-bottom: 30px;
+  }
+
+  .student-list{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .student-card h3{
+    font-size: 23px;
+  }
+
+  .student-card p{
+    font-size: 17px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px){
+  .app{
+    padding: 15px;
+  }
+
+  .page-title{
+    font-size: 26px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+  }
+
+  .student-card h3{
+    font-size: 21px;
+    padding: 16px;
+  }
+
+  .student-card p{
+    font-size: 16px;
+  }
+}
+
